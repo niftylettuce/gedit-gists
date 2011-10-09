@@ -1,3 +1,5 @@
+**Note:** Please see [gedit-icing](http://github.com/niftylettuce/gedit-icing) for more gedit-goodness.
+
 # gedit-gists
 
  **Author:** Nick Baugh ([@niftylettuce](http://twitter.com/#!/niftylettuce)) |
