@@ -8,9 +8,11 @@
 
         sudo apt-get install xclip
 
- 2. Install `gista` (**Note:** this requires [node](https://github.com/joyent/node) and [npm](https://github.com/isaacs/npm)):
+ 2. Install `gista`
+ (**Note:** this requires [node](https://github.com/joyent/node) and
+ [npm](https://github.com/isaacs/npm), here are [quick instructions](https://gist.github.com/579814) to install these requirements):
 
-        npm install -g gista
+          npm install -g gista
 
  3. Add a new entry called `gedit-gists` under `Tools -> Manage External Tools`:
 
