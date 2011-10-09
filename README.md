@@ -23,7 +23,7 @@
         fi
         echo "Successfully created gist (URL is copied to clipboard)"
 
- 4. Set External Tool Options as follows: // TODO: replace this
+ 4. Set External Tool Options as follows:
 
     ![Set External Tool Options as follows](http://i.imgur.com/yqurh.png)
 
@@ -31,7 +31,7 @@
 
  6. You can also select specific parts of a file and use the hotkey.
 
- 7. If you would like to modify things (e.g. public vs. private gists) please view the Source link above.
+ 7. If you would like to modify things (e.g. public vs. private gists) please type `gista -h` and modify the the script above.
 
 
  ---
