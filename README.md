@@ -1,4 +1,4 @@
-**Note:** Please see [gedit-icing](http://github.com/niftylettuce/gedit-icing) for more gedit-goodness.
+**Note:** Please see [gedit-icing](http://github.com/niftylettuce/gedit-icing) for more gedit plugins.
 
 # gedit-gists
 
@@ -14,7 +14,11 @@
 
           npm install -g gista
 
- 3. Add a new entry called `gedit-gists` under `Tools -> Manage External Tools`:
+ 3. Enable the External Tools plugin:
+
+    ![Enable the External Tools plugin](http://i.imgur.com/HuOOy.png)
+
+ 4. Add a new entry called `gedit-gists` under `Tools -> Manage External Tools`:
 
         #!/bin/sh
         if [ -d "$HOME/bin" ]; then PATH="$HOME/bin:$PATH"
@@ -27,15 +31,15 @@
         fi
         echo "Successfully created gist (URL is copied to clipboard)"
 
- 4. Set External Tool Options as follows:
+ 5. Set External Tool Options as follows:
 
     ![Set External Tool Options as follows](http://i.imgur.com/yqurh.png)
 
- 5. Open your file in gedit, then use the hotkey `CTRL+SHIFT+G` to generate and store a Gist URL to your clipboard.
+ 6. Open your file in gedit, then use the hotkey `CTRL+SHIFT+G` to generate and store a Gist URL to your clipboard.
 
- 6. You can also select specific parts of a file and use the hotkey.
+ 7. You can also select specific parts of a file and use the hotkey.
 
- 7. If you would like to modify things (e.g. public vs. private gists) please type `gista -h` and modify the the script above.
+ 8. If you would like to modify things (e.g. public vs. private gists) please type `gista -h` and modify the the script above.
 
 
  ---
