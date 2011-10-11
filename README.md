@@ -20,16 +20,18 @@
 
  4. Add a new entry called `gedit-gists` under `Tools -> Manage External Tools`:
 
-        #!/bin/sh
-        if [ -d "$HOME/bin" ]; then PATH="$HOME/bin:$PATH"
-        fi
-        export PATH=$HOME/local/node/bin:$PATH
-        if [ -n "${GEDIT_CURRENT_DOCUMENT_NAME+x}" ]; then
-        cat $1 | gista -pn $GEDIT_CURRENT_DOCUMENT_NAME -d "Gist created using https://github.com/niftylettuce/gedit-gists" | xclip -selection clipboard
-        else
-        cat $1 | gista -pd "https://github.com/niftylettuce/gedit-gists" | xclip -selection clipboard
-        fi
-        echo "Successfully created gist (URL is copied to clipboard)"
+          #!/bin/sh
+          if [ -d "$HOME/bin" ]; then PATH="$HOME/bin:$PATH"
+          fi
+          export PATH=$HOME/local/node/bin:$PATH
+          if [ -n "${GEDIT_CURRENT_DOCUMENT_NAME+x}" ]; then
+            GIST=`cat $1 | gista -pn $GEDIT_CURRENT_DOCUMENT_NAME -d "Gist created using https://github.com/niftylettuce/gedit-gists"`
+          else
+            GIST=`cat $1 | gista -pd "Gist created using https://github.com/niftylettuce/gedit-gists"`
+          fi
+          echo $GIST | xclip -selection clipboard
+          echo "Successfully created gist (URL is copied to clipboard)"
+          echo $GIST
 
  5. Set External Tool Options as follows:
 
