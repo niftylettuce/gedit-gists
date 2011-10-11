@@ -29,7 +29,7 @@
           else
             GIST=`cat $1 | gista -pd "Gist created using https://github.com/niftylettuce/gedit-gists"`
           fi
-          echo $GIST | xclip -selection clipboard
+          echo $GIST | tr -d '\n' | xclip -selection clipboard
           echo "Successfully created gist (URL is copied to clipboard)"
           echo $GIST
 
@@ -42,7 +42,6 @@
  7. You can also select specific parts of a file and use the hotkey.
 
  8. If you would like to modify things (e.g. public vs. private gists) please type `gista -h` and modify the the script above.
-
 
  ---
 
